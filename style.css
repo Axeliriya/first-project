@@ -1,0 +1,48 @@
+.body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header header header header"
+    ". main main main ."
+    "footer footer footer footer footer";
+  margin: 0;
+  padding: 0 20px;
+  background-color: #99ffcc;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: azure;
+  grid-area: header;
+}
+
+.logo {
+  display: block;
+  width: 60px;
+  height: 40px;
+  margin: 15px;
+  text-align: center;
+  background-color: blanchedalmond;
+}
+
+.navigation {
+  padding: 15px;
+}
+
+.main {
+  background-color: azure;
+  grid-area: main;
+}
+
+.title {
+  color: darkslategray;
+}
+
+.footer {
+  background-color: azure;
+  grid-area: footer;
+}
